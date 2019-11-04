@@ -1,50 +1,48 @@
-This application displays the 5 day weather forecast for a given location.
+PROJECT TITLE:  
+Open Weather Forecasting 
 
-### Features
+Prerequities:
+•	Used UFT Tool and VB Script language
+•	Used Node.js as server.
+•	Installed npm and used it for hosting the application locally.
+•	Written automated test cases in UFT using VB script.
+•	Run the test cases using the test data.
 
-* Enter city name, get 5 day weather forecast
-* Select day, get 3 hourly forecast
-* Select day again, hide 3 hourly forecast
-* Daily forecast should summarise the 3 hour data:
-  * Most dominant (or current) condition
-  * Most dominant (or current) wind speed and direction
-  * Aggregate rainfall
-  * Minimum and maximum temperatures
-* All values should be rounded down
+Installing:
+•	Please Download UFT tool and install it.
+•	Choose Add-in option: Web, Java, ActiveX
+•	Download Node.js and install it.
+•	Install npm.
 
-We would like the application to be tested against the requirements above. Please rewrite the requirements into an appropriate format, e.g. BDD story files, adding any requirements that you think appropriate, such as edge cases or accessibility improvements.
+Running the tests:
+Written automated test cases using VB Script language based on the test data and run the tests.
 
-Please write a set of automated acceptance tests against those requirements using any language and / or test framework of your choice.
+Breakdown into end to end test:
+Depends upon the requirements breakdown the test cases into different scenarios and written test cases according to that.
 
-The application is running in "test" mode, using a set of test data, matching that which comes from the public API at OpenWeatherMap (http://openweathermap.org/forecast5). There is test data for a number of locations, found in the folder ```src/data```.
+Coding style tests:
+SystemUtil.Run "iexplore.exe","http://localhost:3000/",,SHOW_MAXIMISED.
+Written the test case to access the application.
 
-You should find that every important part of the HTML produced has been marked with ```data-test``` attributes.
+Deployment:
+Used Jenkins for deploying the code.
 
-### What we are looking for
+Built with:
+UFT: The tool used
+Node.js: Hosting the application locally.
 
-This exercise is to examine your technical knowledge, and testing skill; there are no tricks or hidden agendas. We are looking for a demonstration of your experience and skill using current testing technologies and methodologies.
+License:
+The tool is licensed under Microsoft.
 
-Make sure that your code is clear, demonstrates good practices, and that you include a readme file explaining how to build and run your solution - please don't spend more than 2 to 4 hours on this.
 
-Bear in mind that your solution will form the basis for a follow-up conversation.
+Challenges briefly:
+•	Developing the automation scripts in UFT was tricky as all the objects in the application were being identified as Web Elements.
+•	Had to spent considerable time initially to align the objects in web elements as a data set. 
+•	It was slightly challenging as most of the objects had indifferent properties.
+•	None of the elements had properties like HTML id or name. Hence identifying the objects uniquely was hard.
+•	To thoroughly test all the features plenty of test cases were required.
 
-### Checklist
 
-Please ensure you have submitted the following:
 
-* A pubic repository (e.g. GitHub, BitBucket) containing the requirements and automated tests
-* A readme explaining
-  * How to build and execute your solution
-  * Details on anything further that you would like to achieve given more time, including any trade-offs that you may have made
+We can discuss more in detail during the interview. Thankyou.
 
-Good luck and thank you for your time - we look forward to seeing your creation.
-
-### Running the app locally
-
-You'll need node and npm installed - first off, install the required dependencies:
-
-    $ npm install
-
-To start up the application:
-
-    $ npm run develop
